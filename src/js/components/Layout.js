@@ -26,6 +26,9 @@ export default class Layout extends React.Component {
 			this.setState({title: 'Welcome!'});
 		}, 2000);
 
+		const {history} = this.props;
+		console.log(history.isActive('archives'));
+
 		return (
 			<div>
 				<Header changeTitle={this.changeTitle.bind(this)} title={this.state.title} />

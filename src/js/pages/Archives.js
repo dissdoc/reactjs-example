@@ -3,6 +3,10 @@ import React from 'react';
 export default class Archives extends React.Component {
 
 	render() {
-		return (<h1>Archives</h1>);
+		const {params} = this.props;
+
+		return (
+			<h1>Archives ({params.article})</h1>
+		);
 	}
 }
